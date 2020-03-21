@@ -19,5 +19,6 @@ from django.urls import path, include
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('uploader.urls')),
-    path('s3direct/', include('s3direct.urls'))
+    path('s3direct/', include('s3direct.urls')),
+    path('viewer/', include('viewer.urls'))
 ]
